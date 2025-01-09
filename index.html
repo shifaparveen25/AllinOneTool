@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--idhar header part ka index hai -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Qr Gene. </title> 
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <b><a href="index.html">All In One Tool</a></b>
+      </div>
+      <ul class="nav-links">
+        <li><a href="OtpGene.html">Otp Gene</a></li>
+        <li><a href="Palindrome.html">Palindrome</a></li>
+        <li><a href="PasswordGene.html">Password Gene</a></li>
+        <li><a href="PercentageCalc.html">Percentage Calculator</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!--Idhar se code gene start hai-->
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Gene.</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <i><p>Paste a url or enter text to create QR code</p></i>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter text or url">
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+<!--idhar header ka nav bar ka script hai-->
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  
+</body>
+</html>
