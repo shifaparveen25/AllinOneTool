@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random OTP Generator</title>
+    
+    <style>
+        /* Styles for header and footer */
+        header, footer {
+            background: #d5e0d9;
+            color: #020101;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Styles for main content */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Button style */
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Random OTP Generator</h1>
+    </header>
+
+    <div class="container">
+        <h2>Generate OTP</h2>
+        <button class="btn" onclick="generateOTP()">Generate</button>
+        <div id="otpDisplay"></div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Random OTP Generator</p>
+    </footer>
+
+    <script>
+        function generateOTP() {
+            // Generate a random 6-digit OTP
+            var otp = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById("otpDisplay").innerText = "Your OTP: " + otp;
+        }
+    </script>
+</body>
+</html>

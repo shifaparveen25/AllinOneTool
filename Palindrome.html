@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Words Generator</title>
+    <style>
+        /* Styles for header and footer */
+        header, footer {
+            background: #d5e0d9;
+            color: #020202;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Styles for main content */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Button style */
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Result style */
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palindrome Words Generator</h1>
+    </header>
+
+    <div class="container">
+        <button class="btn" onclick="generatePalindrome()">Generate Palindrome</button>
+        <div id="result"></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Palindrome Words Generator</p>
+    </footer>
+
+    <script>
+        function generatePalindrome() {
+            var words = ["level", "radar", "noon", "deified", "civic", "stats", "madam", "refer", "rotor", "redder" ];
+            var randomIndex = Math.floor(Math.random() * words.length);
+            var palindrome = words[randomIndex];
+            document.getElementById("result").innerText = "Random Palindrome Word: " + palindrome;
+        }
+    </script>
+</body>
+</html>
